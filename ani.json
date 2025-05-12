@@ -1,0 +1,234 @@
+{
+    "exportedMediaSourceDataList":
+    {
+        "mediaSources":
+        [
+            {
+                "factoryId":"web-selector",
+                "version":2,
+                "arguments":
+                {
+                    "name":"AniCh",
+                    "description":"直连，来自AniCh，Github项目页：https://github.com/Sle2p/AniCh",
+                    "iconUrl":"https://anich.emmmm.eu.org/favicon.ico",
+                    "searchConfig":
+                    {
+                        "searchUrl":"https://anich.emmmm.eu.org/bangumi/search/{keyword}",
+                        "searchUseOnlyFirstWord":true,
+                        "searchRemoveSpecial":true,
+                        "searchUseSubjectNamesCount":1,
+                        "rawBaseUrl":"",
+                        "requestInterval":3000,
+                        "subjectFormatId":"indexed",
+                        "selectorSubjectFormatA":
+                        {
+                            "selectLists":"div.video-info-header > a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatIndexed":
+                        {
+                            "selectNames":"body > section[bangumi]> a > section[info] > section[title]",
+                            "selectLinks":"body > section[bangumi]> a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatJsonPathIndexed":
+                        {
+                            "selectLinks":"$[*]['url', 'link']",
+                            "selectNames":"$[*]['title','name']",
+                            "preferShorterName":true},
+                            "channelFormatId":"no-channel",
+                            "selectorChannelFormatFlattened":
+                            {
+                                "selectChannelNames":".anthology-tab > .swiper-wrapper a","matchChannelName":"^(?<ch>.+?)(\\d+)?$",
+                                "selectEpisodeLists":".anthology-list-box",
+                                "selectEpisodesFromList":"a",
+                                "selectEpisodeLinksFromList":"",
+                                "matchEpisodeSortFromName":"第\\s*(?<ep>.+)\\s*[话集]"
+                            },
+                            "selectorChannelFormatNoChannel":
+                            {
+                                "selectEpisodes":"body > section[episodes] > section[list] > a",
+                                "selectEpisodeLinks":"",
+                                "matchEpisodeSortFromName":"第\\s*(?<ep>.+)\\s*[话集]"
+                            },
+                            "defaultResolution":"1080P",
+                            "defaultSubtitleLanguage":"CHS",
+                            "onlySupportsPlayers":[],
+                            "filterByEpisodeSort":true,
+                            "filterBySubjectName":true,
+                            "selectMedia":
+                            {
+                                "distinguishSubjectName":true,
+                                "distinguishChannelName":true
+                            },
+                            "matchVideo":
+                            {
+                                "enableNestedUrl":true,
+                                "matchNestedUrl":"^.+(m3u8|vip|xigua\\.php).+\\?",
+                                "matchVideoUrl":"(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                                "cookies":"quality=1080",
+                                "addHeadersToVideo":
+                                {
+                                    "referer":"",
+                                    "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                                }
+                        }
+                    }
+                }
+            },
+            {
+                "factoryId":"web-selector",
+                "version":2,
+                "arguments":
+                {
+                    "name":"girigiri愛動漫",
+                    "description":"直连，来自Girigiri愛，网址：https://anime.girigirilove.com",
+                    "iconUrl":"https://anime.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png",
+                    "searchConfig":
+                    {
+                        "searchUrl":"https://anime.girigirilove.com/search/-------------/?wd={keyword}",
+                        "searchUseOnlyFirstWord":true,
+                        "searchRemoveSpecial":true,
+                        "searchUseSubjectNamesCount":1,
+                        "rawBaseUrl":"",
+                        "requestInterval":3000,
+                        "subjectFormatId":"indexed",
+                        "selectorSubjectFormatA":
+                        {
+                            "selectLists":"div.video-info-header > a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatIndexed":
+                        {
+                            "selectNames":"body > .box-width .search-box .thumb-content > .thumb-txt",
+                            "selectLinks":"body > .box-width .search-box .thumb-menu > a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatJsonPathIndexed":
+                        {
+                            "selectLinks":"$[*]['url', 'link']",
+                            "selectNames":"$[*]['title','name']",
+                            "preferShorterName":true
+                        },
+                        "channelFormatId":"index-grouped",
+                        "selectorChannelFormatFlattened":
+                        {
+                            "selectChannelNames":".anthology-tab > .swiper-wrapper a",
+                            "matchChannelName":"^(?<ch>.+?)(\\d+)?$",
+                            "selectEpisodeLists":".anthology-list-box",
+                            "selectEpisodesFromList":"a",
+                            "selectEpisodeLinksFromList":"",
+                            "matchEpisodeSortFromName":"第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "selectorChannelFormatNoChannel": 
+                        {
+                            "selectEpisodes":".anthology-list-play a",
+                            "selectEpisodeLinks":"",
+                            "matchEpisodeSortFromName":"(第\\s*(?<ep>.+)\\s*[话集])|1080P"
+                        },
+                            "defaultResolution":"1080P",
+                            "defaultSubtitleLanguage":"CHS",
+                            "onlySupportsPlayers":[],
+                            "filterByEpisodeSort":true,
+                            "filterBySubjectName":true,
+                            "selectMedia":
+                            {
+                                "distinguishSubjectName":true,
+                                "distinguishChannelName":true
+                            },
+                            "matchVideo":
+                            {
+                                "enableNestedUrl":true,
+                                "matchNestedUrl":"$^",
+                                "matchVideoUrl":"(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(url=(?<v>.+playlist.m3u8))",
+                                "cookies":"quality=1080P",
+                                "addHeadersToVideo":
+                                {
+                                    "referer":"",
+                                    "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                                }
+                            }
+                        }
+                    }
+            },
+            {
+                "factoryId":"web-selector",
+                "version":2,
+                "arguments":
+                {
+                    "name":"Nyafun",
+                    "description":"直连，来自Nyafun，网址：https://www.nyafun.org/",
+                    "iconUrl":"https://www.nyafun.org/upload/mxprocms/20250312-1/ce33a0e4e0b9e7f7d6046988b84955fe.png",
+                    "searchConfig":
+                    {
+                        "searchUrl":"https://www.nyafun.org/index.php/vod/search.html?wd={keyword}",
+                        "searchUseOnlyFirstWord":true,
+                        "searchRemoveSpecial":true,
+                        "searchUseSubjectNamesCount":1,
+                        "rawBaseUrl":"",
+                        "requestInterval":3000,
+                        "subjectFormatId":"a",
+                        "selectorSubjectFormatA":
+                        {
+                            "selectLists":"body > div.page.list > div.main > div > div > div.module-main.module-page > div.module-items.module-card-items > div> div.module-card-item-info > div.module-card-item-title > a ",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatIndexed":
+                        {
+                            "selectNames":"body > .box-width .search-box .thumb-content > .thumb-txt",
+                            "selectLinks":"body > .box-width .search-box .thumb-menu > a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatJsonPathIndexed":
+                        {
+                            "selectLinks":"$[*]['url', 'link']",
+                            "selectNames":"$[*]['title','name']",
+                            "preferShorterName":true
+                        },
+                        "channelFormatId":"index-grouped",
+                        "selectorChannelFormatFlattened":
+                        {
+                            "selectChannelNames":"#y-playList > div.module-tab-item.tab-item span",
+                            "matchChannelName":"",
+                            "selectEpisodeLists":"#panel1 > div > div",
+                            "selectEpisodesFromList":"a",
+                            "selectEpisodeLinksFromList":"",
+                            "matchEpisodeSortFromName":"第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "selectorChannelFormatNoChannel":
+                        {
+                            "selectEpisodes":".anthology-list-play a",
+                            "selectEpisodeLinks":"",
+                            "matchEpisodeSortFromName":"(第\\s*(?<ep>.+)\\s*[话集])|1080P"
+                        },
+                        "defaultResolution":"1080P",
+                        "defaultSubtitleLanguage":"CHS",
+                        "onlySupportsPlayers":[],
+                        "filterByEpisodeSort":true,
+                        "filterBySubjectName":true,
+                        "selectMedia":
+                        {
+                            "distinguishSubjectName":true,
+                            "distinguishChannelName":true
+                        },
+                        "matchVideo":
+                        {
+                            "enableNestedUrl":true,
+                            "matchNestedUrl":"^.+(m3u8|vip|xigua\\.php).+\\?",
+                            "matchVideoUrl":"(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                            "cookies":"quality=1080P",
+                            "addHeadersToVideo":
+                            {
+                                "referer":"",
+                                "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        ]
+    }
+}
+
