@@ -75,7 +75,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 0
                 }
             },
 
@@ -151,8 +152,86 @@
                                     "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                                 }
                             }
-                        }
+                        },
+                        "tier": 0
                     }
+            },
+
+            {
+                "factoryId":"web-selector",
+                "version":2,
+                "arguments":
+                {
+                    "name":"次元城动画",
+                    "description":"直连，PC不可用，来自次元城动画，网址：https://www.cycani.org/",
+                    "iconUrl":"https://gitee.com/JOJOC2H4/ani-source/raw/master/icon/%E6%AC%A1%E5%85%83%E5%9F%8E.png",
+                    "searchConfig":
+                    {
+                        "searchUrl":"https://www.cycani.org/search.html?wd={keyword}",
+                        "searchUseOnlyFirstWord":true,
+                        "searchRemoveSpecial":true,
+                        "searchUseSubjectNamesCount":1,
+                        "rawBaseUrl":"",
+                        "requestInterval":3000,
+                        "subjectFormatId":"indexed",
+                        "selectorSubjectFormatA":
+                        {
+                            "selectLists":"div.video-info-header > a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatIndexed":
+                        {
+                            "selectNames":".search-box .thumb-content > .thumb-txt",
+                            "selectLinks":".search-box .thumb-menu > a",
+                            "preferShorterName":true
+                        },
+                        "selectorSubjectFormatJsonPathIndexed":
+                        {
+                            "selectLinks":"$[*]['url', 'link']",
+                            "selectNames":"$[*]['title','name']",
+                            "preferShorterName":true
+                        },
+                        "channelFormatId":"index-grouped",
+                        "selectorChannelFormatFlattened":
+                        {
+                            "selectChannelNames":".anthology-tab > .swiper-wrapper a",
+                            "matchChannelName":"",
+                            "selectEpisodeLists":".anthology-list-box",
+                            "selectEpisodesFromList":"a",
+                            "selectEpisodeLinksFromList":"",
+                            "matchEpisodeSortFromName":"第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "selectorChannelFormatNoChannel":
+                        {
+                            "selectEpisodes":"#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                            "selectEpisodeLinks":"",
+                            "matchEpisodeSortFromName":"第\\s*(?<ep>.+)\\s*[话集]"
+                        },
+                        "defaultResolution":"1080P",
+                        "defaultSubtitleLanguage":"CHS",
+                        "onlySupportsPlayers":[],
+                        "filterByEpisodeSort":true,
+                        "filterBySubjectName":true,
+                        "selectMedia":
+                        {
+                            "distinguishSubjectName":true,
+                            "distinguishChannelName":true
+                        },
+                        "matchVideo":
+                        {
+                            "enableNestedUrl":true,
+                            "matchNestedUrl":"^.+(m3u8|vip|xigua\\.php).+\\?",
+                            "matchVideoUrl":"(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                            "cookies":"quality=1080",
+                            "addHeadersToVideo":
+                            {
+                                "referer":"",
+                                "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                            }
+                        }
+                    },
+                    "tier":0
+                }
             },
 
             {
@@ -227,7 +306,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 0
                 }
             },
 
@@ -303,7 +383,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 1
                 }
             },
 
@@ -379,7 +460,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 1
                 }
             },
 
@@ -455,7 +537,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 2
                 }
             },
 
@@ -599,7 +682,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 0
                 }
             },
             
@@ -675,7 +759,8 @@
                                 "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                             }
                         }
-                    }
+                    },
+                    "tier": 0
                 }
             }
 
