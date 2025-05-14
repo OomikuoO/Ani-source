@@ -130,31 +130,31 @@
                             "selectEpisodeLinks":"",
                             "matchEpisodeSortFromName":"(第\\s*(?<ep>.+)\\s*[话集])|1080P"
                         },
-                            "defaultResolution":"1080P",
-                            "defaultSubtitleLanguage":"CHS",
-                            "onlySupportsPlayers":[],
-                            "filterByEpisodeSort":true,
-                            "filterBySubjectName":true,
-                            "selectMedia":
-                            {
-                                "distinguishSubjectName":true,
-                                "distinguishChannelName":true
-                            },
-                            "matchVideo":
-                            {
-                                "enableNestedUrl":true,
-                                "matchNestedUrl":"$^",
-                                "matchVideoUrl":"(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(url=(?<v>.+playlist.m3u8))",
-                                "cookies":"quality=1080P",
-                                "addHeadersToVideo":
-                                {
-                                    "referer":"",
-                                    "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-                                }
-                            }
+                        "defaultResolution":"1080P",
+                        "defaultSubtitleLanguage":"CHS",
+                        "onlySupportsPlayers":[],
+                        "filterByEpisodeSort":true,
+                        "filterBySubjectName":true,
+                        "selectMedia":
+                        {
+                            "distinguishSubjectName":true,
+                            "distinguishChannelName":true
                         },
-                        "tier": 0
-                    }
+                        "matchVideo":
+                        {
+                            "enableNestedUrl":true,
+                            "matchNestedUrl":"$^",
+                            "matchVideoUrl":"(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(url=(?<v>.+playlist.m3u8))",
+                            "cookies":"quality=1080P",
+                            "addHeadersToVideo":
+                            {
+                                "referer":"",
+                                "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+                            }
+                        }
+                    },
+                    "tier": 0
+                }
             },
 
             {
