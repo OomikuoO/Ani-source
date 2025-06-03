@@ -240,11 +240,11 @@
                 "arguments":
                 {
                     "name":"次元城动画",
-                    "description":"直连，PC不可用，来自次元城动画，网址：https://www.cycani.org/",
+                    "description":"停用，有反爬，来自次元城动画，网址：https://www.cycani.org/",
                     "iconUrl":"https://gitee.com/JOJOC2H4/ani-source/raw/master/icon/%E6%AC%A1%E5%85%83%E5%9F%8E.png",
                     "searchConfig":
                     {
-                        "searchUrl":"https://www.cycani.org/search.html?wd={keyword}",
+                        "searchUrl":"https://www.ciyuancheng.net/search.html?wd={keyword}",
                         "searchUseOnlyFirstWord":true,
                         "searchRemoveSpecial":true,
                         "searchUseSubjectNamesCount":1,
