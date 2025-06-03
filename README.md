@@ -8,6 +8,7 @@
 #### 在线源 
 - 直连-[AniCh](https://github.com/Sle2p/AniCh)
 - 直连-[girigiri愛](https://anime.girigirilove.com)
+- 直连-[稀饭动漫](https://xifan.moe/)
 - 直连-[次元城动画](https://www.cycani.org/) PC不可用
 - 直连-[咕咕番](https://www.gugufan.xyz/)
 - 直连-[Aki动漫](https://xn--gmqr9gevarqk8t.cn/)
